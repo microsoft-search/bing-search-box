@@ -1,0 +1,14 @@
+declare interface IBingSearchBoxWebPartStrings {
+  PropertyPaneDescription: string;
+  //BasicGroupName: string;
+  DescriptionFieldLabel: string;
+  AppLocalEnvironmentSharePoint: string;
+  AppLocalEnvironmentTeams: string;
+  AppSharePointEnvironment: string;
+  AppTeamsTabEnvironment: string;
+}
+
+declare module 'BingSearchBoxWebPartStrings' {
+  const strings: IBingSearchBoxWebPartStrings;
+  export = strings;
+}

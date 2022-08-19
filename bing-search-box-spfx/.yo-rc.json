@@ -1,0 +1,16 @@
+{
+  "@microsoft/generator-sharepoint": {
+    "plusBeta": false,
+    "isCreatingSolution": true,
+    "version": "1.15.2",
+    "libraryName": "bing-search-box",
+    "libraryId": "23b36870-5cc2-4c89-80d0-8790f0991995",
+    "environment": "spo",
+    "packageManager": "npm",
+    "solutionName": "Bing Search Box",
+    "solutionShortDescription": "Bing Search Box description",
+    "skipFeatureDeployment": true,
+    "isDomainIsolated": false,
+    "componentType": "webpart"
+  }
+}

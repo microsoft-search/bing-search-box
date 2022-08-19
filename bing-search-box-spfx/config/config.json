@@ -1,0 +1,22 @@
+{
+    "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
+    "version": "2.0",
+    "bundles": {
+        "bing-search-box-web-part": {
+            "components": [{
+                "entrypoint": "./lib/webparts/bingSearchBox/BingSearchBoxWebPart.js",
+                "manifest": "./src/webparts/bingSearchBox/BingSearchBoxWebPart.manifest.json"
+            }]
+        }
+    },
+    "externals": {
+        "bfb": {
+            "path": "https://www.bing.com/business/s?k=sb",
+            "globalName": "BFB"
+        }
+    },
+    "localizedResources": {
+        "BingSearchBoxWebPartStrings": "lib/webparts/bingSearchBox/loc/{locale}.js",
+        "PropertyControlStrings": "node_modules/@pnp/spfx-property-controls/lib/loc/{locale}.js"
+    }
+}

@@ -1,0 +1,28 @@
+{
+    "$schema": "https://developer.microsoft.com/json-schemas/spfx/client-side-web-part-manifest.schema.json",
+    "id": "b6f0afa1-e142-406c-a084-038fcf2881f2",
+    "alias": "BingSearchBoxWebPart",
+    "componentType": "WebPart",
+    "version": "*",
+    "manifestVersion": 2,
+    "requiresCustomScript": false,
+    "supportedHosts": ["SharePointWebPart", "SharePointFullPage"],
+    "supportsThemeVariants": true,
+
+    "preconfiguredEntries": [{
+        "groupId": "5c03119e-3074-46fd-976b-c60198311f70", // Advanced
+        "group": { "default": "Advanced" },
+        "title": { "default": "Bing Search Box" },
+        "description": { "default": "Bing Search Box description" },
+        "officeFabricIconFontName": "WebSearch",
+        "properties": {
+            "width": 560,
+            "height": 40,
+            "title": "Bing search box",
+            "cornerRadius": 6,
+            "strokeOutline": true,
+            "dropShadow": true,
+            "ghostText": "Contoso"
+        }
+    }]
+}
