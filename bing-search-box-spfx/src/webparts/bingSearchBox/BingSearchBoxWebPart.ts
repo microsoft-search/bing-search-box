@@ -102,7 +102,7 @@ export default class BingSearchBoxWebPart extends BaseClientSideWebPart<IBingSea
                                 PropertyPaneHorizontalRule(),
                                 PropertyFieldNumber('width', { key:"width", label: "Width", minValue: 360, maxValue: 650, value:this.properties.width }),
                                 PropertyFieldNumber('height', { key:"height", label: "Height", minValue: 40, maxValue: 72, value:this.properties.height }),
-                                //PropertyPaneTextField('title', { label: "Title" }),
+                                PropertyPaneTextField('title', { label: "Accessibility title" }),
                                 PropertyFieldNumber('cornerRadius', { key:"cornerRadius", label: "Corner radius", minValue: 0, maxValue: 25, value:this.properties.cornerRadius }),
                                 PropertyPaneToggle('strokeOutline', { label: "Stroke outline" }),
                                 PropertyPaneToggle('dropShadow', { label: "Drop shadow" }),                                
