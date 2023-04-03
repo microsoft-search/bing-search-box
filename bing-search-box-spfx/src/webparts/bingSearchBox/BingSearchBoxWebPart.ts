@@ -13,6 +13,7 @@ import bfb from 'bfb';
 import * as strings from 'BingSearchBoxWebPartStrings';
 
 export interface IBingSearchBoxWebPartProps {
+    verticalName: string;
     width: number;
     height: number;
     title: string;
@@ -34,6 +35,7 @@ export default class BingSearchBoxWebPart extends BaseClientSideWebPart<IBingSea
 
         const bfbSearchBoxConfig = {
             containerSelector: "bfb_searchbox",
+            vertical: this.properties.verticalName,   // default: "All"
             width: this.properties.width,                             // default: 560, min: 360, max: 650
             height: this.properties.height,                             // default: 40, min: 40, max: 72
             title: this.properties.title,               // default: "Bing search box"
@@ -41,7 +43,7 @@ export default class BingSearchBoxWebPart extends BaseClientSideWebPart<IBingSea
             strokeOutline: this.properties.strokeOutline,                    // default: true
             dropShadow: this.properties.dropShadow,                       // default: true
             iconColor: this._iconColor,                   // default: #067FA6
-            companyNameInGhostText: this.properties.ghostText       // default: not specified
+            companyNameInGhostText: this.properties.ghostText,       // default: not specified
             // when absent, ghost text will be "Search work and the web"
             // when specified, text will be "Search the web and [Contoso]"
         };
@@ -103,6 +105,7 @@ export default class BingSearchBoxWebPart extends BaseClientSideWebPart<IBingSea
                                 PropertyFieldNumber('width', { key:"width", label: "Width", minValue: 360, maxValue: 650, value:this.properties.width }),
                                 PropertyFieldNumber('height', { key:"height", label: "Height", minValue: 40, maxValue: 72, value:this.properties.height }),
                                 PropertyPaneTextField('title', { label: "Accessibility title" }),
+                                PropertyPaneTextField('verticalName', { label: "Redirect to vertical", description: "Leave empty to search the All vertical. E.g. 'File-files' for the files vertical and 'Connectors-<id>' for a connector vertical." }),
                                 PropertyFieldNumber('cornerRadius', { key:"cornerRadius", label: "Corner radius", minValue: 0, maxValue: 25, value:this.properties.cornerRadius }),
                                 PropertyPaneToggle('strokeOutline', { label: "Stroke outline" }),
                                 PropertyPaneToggle('dropShadow', { label: "Drop shadow" }),                                

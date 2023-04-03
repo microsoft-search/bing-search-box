@@ -1,40 +1,38 @@
 {
-  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
-  "solution": {
-    "name": "bing-search-box-client-side-solution",
-    "id": "23b36870-5cc2-4c89-80d0-8790f0991995",
-    "version": "1.0.0.0",
-    "includeClientSideAssets": true,
-    "skipFeatureDeployment": true,
-    "isDomainIsolated": false,
-    "developer": {
-      "name": "",
-      "websiteUrl": "",
-      "privacyUrl": "",
-      "termsOfUseUrl": "",
-      "mpnId": "Undefined-1.15.2"
+    "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
+    "solution": {
+        "name": "bing-search-box-client-side-solution",
+        "id": "23b36870-5cc2-4c89-80d0-8790f0991995",
+        "version": "1.1.0.0",
+        "includeClientSideAssets": true,
+        "skipFeatureDeployment": true,
+        "isDomainIsolated": false,
+        "developer": {
+            "name": "Microsoft Search",
+            "websiteUrl": "",
+            "privacyUrl": "",
+            "termsOfUseUrl": "",
+            "mpnId": "Undefined-1.15.2"
+        },
+        "metadata": {
+            "shortDescription": {
+                "default": "Bing Search Box launching Bing@Work"
+            },
+            "longDescription": {
+                "default": "Bing Search Box launching Bing@Work"
+            },
+            "screenshotPaths": [],
+            "videoUrl": "",
+            "categories": []
+        },
+        "features": [{
+            "title": "bing-search-box Feature",
+            "description": "The feature that activates elements of the bing-search-box solution.",
+            "id": "c78dc1ff-006d-4863-ac33-bded35c92359",
+            "version": "1.1.0.0"
+        }]
     },
-    "metadata": {
-      "shortDescription": {
-        "default": "Bing Search Box description"
-      },
-      "longDescription": {
-        "default": "Bing Search Box description"
-      },
-      "screenshotPaths": [],
-      "videoUrl": "",
-      "categories": []
-    },
-    "features": [
-      {
-        "title": "bing-search-box Feature",
-        "description": "The feature that activates elements of the bing-search-box solution.",
-        "id": "c78dc1ff-006d-4863-ac33-bded35c92359",
-        "version": "1.0.0.0"
-      }
-    ]
-  },
-  "paths": {
-    "zippedPackage": "solution/bing-search-box.sppkg"
-  }
+    "paths": {
+        "zippedPackage": "solution/bing-search-box.sppkg"
+    }
 }
