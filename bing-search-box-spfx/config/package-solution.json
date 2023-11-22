@@ -3,7 +3,7 @@
     "solution": {
         "name": "bing-search-box-client-side-solution",
         "id": "23b36870-5cc2-4c89-80d0-8790f0991995",
-        "version": "1.1.0.0",
+        "version": "1.2.0.0",
         "includeClientSideAssets": true,
         "skipFeatureDeployment": true,
         "isDomainIsolated": false,
@@ -29,7 +29,7 @@
             "title": "bing-search-box Feature",
             "description": "The feature that activates elements of the bing-search-box solution.",
             "id": "c78dc1ff-006d-4863-ac33-bded35c92359",
-            "version": "1.1.0.0"
+            "version": "1.2.0.0"
         }]
     },
     "paths": {
