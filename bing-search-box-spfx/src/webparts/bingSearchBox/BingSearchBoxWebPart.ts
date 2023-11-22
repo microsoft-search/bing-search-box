@@ -31,6 +31,11 @@ export default class BingSearchBoxWebPart extends BaseClientSideWebPart<IBingSea
     private _iconColor: string = "#067FA6";
 
     public render(): void {
+        if(this.context.pageContext.user.isAnonymousGuestUser || this.context.pageContext.user.isExternalGuestUser ) {
+            this.domElement.remove();
+            return;
+        }
+
         this.domElement.innerHTML = `<div id="bfb_searchbox"></div>`;
 
         const bfbSearchBoxConfig = {
